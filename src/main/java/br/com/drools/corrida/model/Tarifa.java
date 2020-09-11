@@ -1,4 +1,4 @@
-package br.com.drools.corrida;
+package br.com.drools.corrida.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

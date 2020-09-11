@@ -1,5 +1,7 @@
 package br.com.drools.corrida;
-
+import br.com.drools.corrida.model.Corrida;
+import br.com.drools.corrida.model.Tarifa;
+import br.com.drools.corrida.service.CorridaService;
 import org.drools.decisiontable.InputType;
 import org.drools.decisiontable.SpreadsheetCompiler;
 import org.junit.jupiter.api.Test;
@@ -68,15 +70,15 @@ class CorridaApplicationTests {
 
 
     @Test
-	public void whenCorridaNoturnaComDistanciaMaiorQue100QuilometrosDT() {
-		Corrida corrida = new Corrida();
-		corrida.setNoturna(true);
-		corrida.setDistanciaPercorrida(110L);
-		Tarifa tarifa = corridaService.calcularDT(corrida);
+    public void whenCorridaNoturnaComDistanciaMaiorQue100QuilometrosDT() {
+        Corrida corrida = new Corrida();
+        corrida.setNoturna(true);
+        corrida.setDistanciaPercorrida(110L);
+        Tarifa tarifa = corridaService.calcularDT(corrida);
 
-		assertEquals(250l, tarifa.getValor());
-		assertEquals(50l, tarifa.getAdicionalNoturno());
-	}
+        assertEquals(250l, tarifa.getValor());
+        assertEquals(50l, tarifa.getAdicionalNoturno());
+    }
 
     @Test
     public void whenCorridaDiurnaComDistanciaMenorQue20QuilometrosDT() {

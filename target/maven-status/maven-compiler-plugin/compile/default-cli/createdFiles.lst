@@ -1,0 +1,9 @@
+br/com/drools/corrida/listener/CorridaAgendaEventListener.class
+br/com/drools/corrida/model/Corrida.class
+br/com/drools/corrida/listener/CorridaRuleEventListener.class
+br/com/drools/corrida/model/Tarifa.class
+br/com/drools/corrida/service/CorridaService.class
+br/com/drools/corrida/service/Provider.class
+br/com/drools/corrida/listener/CorridaProcessEventListener.class
+br/com/drools/corrida/CorridaApplication.class
+br/com/drools/corrida/CorridaConfiguration.class
